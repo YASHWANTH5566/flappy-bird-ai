@@ -1,0 +1,76 @@
+Microsoft Windows [Version 10.0.26100.4946]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\myasw\OneDrive\Desktop\flappy-bird-ai>python flappy.py
+pygame 2.6.1 (SDL 2.28.4, Python 3.11.9)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+
+ ****** Running generation 0 ******
+
+Population's average fitness: 2.70000 stdev: 2.64102
+Best fitness: 13.80000 - size: (1, 3) - species 1 - id 53
+Average adjusted fitness: 0.153
+Mean genetic distance 1.405, standard deviation 0.536
+Population of 100 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0   100     13.8    0.153     0
+Total extinctions: 0
+Generation time: 3.666 sec
+
+ ****** Running generation 1 ******
+
+Population's average fitness: 8.09000 stdev: 21.96221
+Best fitness: 129.30000 - size: (1, 3) - species 1 - id 163
+Average adjusted fitness: 0.057
+Mean genetic distance 1.405, standard deviation 0.475
+Population of 100 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    1   100    129.3    0.057     0
+Total extinctions: 0
+Generation time: 23.606 sec (13.636 average)
+
+ ****** Running generation 2 ******
+
+Population's average fitness: 8.61300 stdev: 36.97082
+Best fitness: 265.80000 - size: (1, 2) - species 1 - id 265
+Average adjusted fitness: 0.030
+Mean genetic distance 1.508, standard deviation 0.530
+Population of 100 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    2   100    265.8    0.030     0
+Total extinctions: 0
+Generation time: 47.540 sec (24.937 average)
+
+ ****** Running generation 3 ******
+
+Population's average fitness: 14.57700 stdev: 25.28220
+Best fitness: 77.00000 - size: (1, 3) - species 1 - id 350
+Average adjusted fitness: 0.182
+Mean genetic distance 1.435, standard deviation 0.566
+Population of 100 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    3   100     77.0    0.182     1
+Total extinctions: 0
+Generation time: 14.467 sec (22.320 average)
+
+ ****** Running generation 4 ******
+
+Population's average fitness: 113.54700 stdev: 188.75410
+Best fitness: 570.30000 - size: (1, 2) - species 1 - id 454
+
+Best individual in generation 4 meets fitness threshold - complexity: (1, 2)
+
+Best genome:
+Key: 454
+Fitness: 570.3000000000321
+Nodes:
+        0 DefaultNodeGene(key=0, bias=-1.9790092205931529, response=1.0, activation=tanh, aggregation=sum)
+Connections:
+        DefaultConnectionGene(key=(-3, 0), weight=-2.3185432244197854, enabled=True)
+        DefaultConnectionGene(key=(-2, 0), weight=2.213073054283692, enabled=True)
+
+C:\Users\myasw\OneDrive\Desktop\flappy-bird-ai>
