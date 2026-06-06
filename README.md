@@ -1,35 +1,45 @@
-🐦 Flappy Bird AI using NEAT
-📌 Project Overview
+# 🐦 Flappy Bird AI using NEAT
 
-This project implements an autonomous Flappy Bird agent using the NEAT (NeuroEvolution of Augmenting Topologies) algorithm. Instead of manually programming the bird's behavior, the AI learns how to play through evolutionary learning by evolving neural network structures and weights over multiple generations.
+## 📌 Project Overview
+
+This project implements an autonomous Flappy Bird agent using the **NEAT (NeuroEvolution of Augmenting Topologies)** algorithm. Instead of manually programming the bird's behavior, the AI learns how to play through evolutionary learning by evolving neural network structures and weights over multiple generations.
 
 The agent continuously improves its gameplay by receiving rewards for survival and successfully navigating through pipes, eventually learning optimal jumping strategies without human intervention.
 
-🎯 Objective
+---
 
-The goal of this project is to demonstrate how NeuroEvolution can be applied to game environments to create self-learning agents capable of making intelligent decisions.
+## 🎯 Objective
 
-🧠 AI Approach
+The goal of this project is to demonstrate how **NeuroEvolution** can be applied to game environments to create self-learning agents capable of making intelligent decisions.
 
-The project uses the NEAT-Python library to evolve neural networks.
+---
 
-Input Features
+## 🧠 AI Approach
+
+The project uses the **NEAT-Python** library to evolve neural networks.
+
+### Input Features
 
 The neural network receives:
 
-Current bird position (Y-coordinate)
-Distance from the top pipe
-Distance from the bottom pipe
-Output
+* Current bird position (Y-coordinate)
+* Distance from the top pipe
+* Distance from the bottom pipe
+
+### Output
 
 The network generates a single output:
 
-Jump
-Do Not Jump
+* Jump
+* Do Not Jump
 
 Based on this output, the bird decides whether to flap its wings and avoid obstacles.
 
-🏗️ Architecture
+---
+
+## 🏗️ Architecture
+
+```text
 Game Environment (Flappy Bird)
             │
             ▼
@@ -52,69 +62,101 @@ Game Environment (Flappy Bird)
             │
             ▼
    Improved Generation
-🛠️ Technology Stack
-Category	Technology
-Language	Python
-AI Algorithm	NEAT
-Game Engine	Pygame
-Neural Networks	NEAT-Python
-Optimization	Evolutionary Algorithms
-🚀 Key Features
-NeuroEvolution
-Neural networks evolve automatically.
-Network topology changes dynamically over generations.
-No pre-defined model architecture required.
-Autonomous Learning
-The bird learns without labeled training data.
-Uses trial-and-error learning.
-Evolutionary Optimization
-Fitness-based selection.
-Mutation and crossover operations.
-Species preservation to encourage innovation.
-Real-Time Simulation
-Live gameplay visualization using Pygame.
-Generation tracking.
-Fitness monitoring.
-📊 Training Process
-Population Initialization
+```
+
+---
+
+## 🛠️ Technology Stack
+
+| Category        | Technology              |
+| --------------- | ----------------------- |
+| Language        | Python                  |
+| AI Algorithm    | NEAT                    |
+| Game Engine     | Pygame                  |
+| Neural Networks | NEAT-Python             |
+| Optimization    | Evolutionary Algorithms |
+
+---
+
+## 🚀 Key Features
+
+### NeuroEvolution
+
+* Neural networks evolve automatically.
+* Network topology changes dynamically over generations.
+* No pre-defined model architecture required.
+
+### Autonomous Learning
+
+* The bird learns without labeled training data.
+* Uses trial-and-error learning.
+
+### Evolutionary Optimization
+
+* Fitness-based selection.
+* Mutation and crossover operations.
+* Species preservation to encourage innovation.
+
+### Real-Time Simulation
+
+* Live gameplay visualization using Pygame.
+* Generation tracking.
+* Fitness monitoring.
+
+---
+
+## 📊 Training Process
+
+### Population Initialization
 
 The algorithm begins with a population of neural networks.
 
-Population Size: 100
-Fitness Function
+**Population Size:** 100
+
+### Fitness Function
 
 Birds receive rewards for:
 
-✅ Staying alive
-
-✅ Successfully passing pipes
+* ✅ Staying alive
+* ✅ Successfully passing pipes
 
 Birds are penalized for:
 
-❌ Colliding with pipes
+* ❌ Colliding with pipes
+* ❌ Hitting the ground
 
-❌ Hitting the ground
-
-Evolution
+### Evolution
 
 After each generation:
 
-Best-performing birds are selected.
-Weak performers are removed.
-New offspring are created.
-Mutations introduce new behaviors.
-The next generation starts.
-📈 Results
-Achievements
-Successfully trained AI agents to play Flappy Bird autonomously.
-Evolved stable navigation behavior over multiple generations.
-Demonstrated effective obstacle avoidance strategies.
-Improved agent survival through evolutionary learning.
-Performance
-Trained across multiple generations.
-Achieved consistent obstacle navigation.
-Reached high survival rates compared to random gameplay.
-📂 Project Structure
+1. Best-performing birds are selected.
+2. Weak performers are removed.
+3. New offspring are created.
+4. Mutations introduce new behaviors.
+5. The next generation begins.
+
+---
+
+## 📈 Results
+
+### Achievements
+
+* Successfully trained AI agents to play Flappy Bird autonomously.
+* Evolved stable navigation behavior over multiple generations.
+* Demonstrated effective obstacle avoidance strategies.
+* Improved agent survival through evolutionary learning.
+
+### Performance
+
+* Trained across multiple generations.
+* Achieved consistent obstacle navigation.
+* Reached high survival rates compared to random gameplay.
+
+---
+
+## 📂 Project Structure
+
+```text
 Flappy-Bird-AI/
 │
 ├── flappy.py
@@ -134,33 +176,61 @@ Flappy-Bird-AI/
 │   ├── evolved_agent.png
 │
 └── README.md
-▶️ Installation
-Clone Repository
+```
+
+---
+
+## ▶️ Installation
+
+### Clone Repository
+
+```bash
 git clone https://github.com/yourusername/Flappy-Bird-AI.git
 cd Flappy-Bird-AI
-Install Dependencies
+```
+
+### Install Dependencies
+
+```bash
 pip install pygame
 pip install neat-python
-Run Project
+```
+
+### Run Project
+
+```bash
 python flappy.py
-📚 Concepts Demonstrated
-Artificial Intelligence
-NeuroEvolution
-Neural Networks
-Reinforcement Learning Concepts
-Evolutionary Algorithms
-Autonomous Agents
-Game AI Development
-Optimization Techniques
-🎯 Future Improvements
-Save and load trained genomes.
-Visualize neural network architecture.
-Hyperparameter optimization.
-Multi-objective fitness functions.
-Performance analytics dashboard.
-👨‍💻 Author
+```
 
-Munagala Sai Manikanta Yashwanth
+---
 
-B.Tech – Computer Science & Engineering (AI & DS)
-Python | AI | Machine Learning | Data Engineering
+## 📚 Concepts Demonstrated
+
+* Artificial Intelligence
+* NeuroEvolution
+* Neural Networks
+* Reinforcement Learning Concepts
+* Evolutionary Algorithms
+* Autonomous Agents
+* Game AI Development
+* Optimization Techniques
+
+---
+
+## 🎯 Future Improvements
+
+* Save and load trained genomes.
+* Visualize neural network architecture.
+* Hyperparameter optimization.
+* Multi-objective fitness functions.
+* Performance analytics dashboard.
+
+---
+
+## 👨‍💻 Author
+
+### Munagala Sai Manikanta Yashwanth
+
+**B.Tech – Computer Science & Engineering (AI & DS)**
+
+**Skills:** Python | Artificial Intelligence | Machine Learning | Data Engineering
